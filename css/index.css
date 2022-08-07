@@ -1,0 +1,253 @@
+@font-face {
+    font-family: Averta;
+    src: url(https://res.cloudinary.com/dafsch2zs/raw/upload/v1596618987/Zuri%20Landing/AvertaDemoPECuttedDemo-Regular_dghpn7.otf);
+}
+
+:root {
+    --font-size: 16/* px */;
+
+    --gray: #514949;
+    --dark-gray: #212529;
+    --white: #FFF;
+    --red: #E7332B;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Averta', sans-serif;;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--gray);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* General classes */
+.link {
+    color: var(--red);
+}
+
+/* Hero */
+.hero {
+    background: url('../assets/images/landing/hero-bg.svg') no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__img {
+    margin: calc(69 / var(--font-size) * 1rem) 0;
+}
+
+.hero__header {
+    text-align: center;
+}
+
+.hero__heading {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: calc(36 / var(--font-size) * 1rem);
+}
+
+.hero__content {
+    max-width: 700px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.hero__text {
+    line-height: calc(24 / var(--font-size));
+}
+
+.hero__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    
+    margin-top: calc(92 / var(--font-size) * 1rem);
+
+}
+
+.hero__btn {
+    border: 1px solid var(--red);
+    color: var(--red);
+    padding: calc(11 / var(--font-size) * 1rem) calc(28 / var(--font-size) * 1rem);
+}
+
+.hero__btn--1,
+.hero__btn--2:hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.hero__btn--1:hover {
+    background: var(--white);
+    color: var(--red);
+}
+
+/* Programs */
+.programs {
+    padding: 5em 5%;
+
+}
+
+.programs__header {
+    text-align: center;
+}
+
+.programs__heading {
+    color: var(--red);
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.programs__slogan {
+    color: #514949;
+    font-size: 1.5rem;
+    line-height: 1.75;
+
+    margin-bottom: 4em;
+    margin-top: .5em;
+}
+
+.programs__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+    margin: 3em auto;
+}
+
+.program {
+    background-color: #FFFAFA;
+    padding: calc(61 / var(--font-size) * 1rem) calc(47 / var(--font-size) * 1rem) calc(82 / var(--font-size) * 1rem) calc(36 / var(--font-size) * 1rem);
+    
+    max-width: 400px;
+}
+
+.program__caption {
+    display: flex;
+    flex-direction: column-reverse;
+
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+.program__heading {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: .5em 0;
+}
+
+.program__text {
+    margin: 2em 0;
+}
+
+/* Footer */
+.footer {
+    margin: 5em auto 0;
+    max-width: 1400px;
+    padding: 4em 5%;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25em;
+
+    margin-bottom: 2em;    
+    text-align: center;
+}
+
+.footer__heading {
+    font-size: 1.5rem;
+
+    margin-bottom: 1em;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__address {
+    font-style: normal;
+}
+
+.footer__email {
+    display: block;
+    margin: 1em 0;
+}
+
+.footer__socials {
+    display: flex;
+    gap: .5em;
+}
+
+.social__img {
+    width: 20px;
+}
+
+.footer__hr {
+    border: 0.7px solid #514949;
+    opacity: 0.2;
+}
+
+.footer__copyright {
+    font-weight: bold;
+    margin: 2em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .footer__top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .footer__heading {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .programs__list {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .programs {
+        background-image: url('../assets/images/landing/left_bvmv7q.png'), url('../assets/images/landing/right_yz6hn3.png');
+        background-repeat: no-repeat;
+        background-size: 375px 475px, 375px 475px;
+        background-position: top 40% left 2.5%, top 40% right 2.5%;
+    }
+}

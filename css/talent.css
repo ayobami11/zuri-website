@@ -1,0 +1,356 @@
+:root {
+    --red: #E7332B;
+    --white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, a {
+    font-size: 1rem;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+/* Header nav */
+.nav {
+    padding: 1.5em 5%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.nav__right {
+    flex: 1;
+    max-width: 500px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+}
+
+.nav__menu {
+    flex: 1;
+
+    display: none;
+    max-width: 300px;
+}
+
+.nav__list {
+    flex: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    color: #161617;
+    padding: 1em;
+
+    border-bottom: 3px solid var(--red);
+}
+
+.nav__btn {
+    background: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: .75em 2em;
+
+    border-end-end-radius: .75em;
+}
+
+
+/* Hero */
+.hero {
+    padding: 2em 5%;
+}
+
+.hero__fig {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.hero__img-c {
+    max-width: 600px;
+}
+
+.hero__figc {
+    max-width: 600px;
+    border: 1px solid red;
+}
+
+.hero__heading {
+    margin: 1em 0;
+}
+
+/* Impact section */
+.impact {
+    background: url('../assets/images/talent/bgsection2.063bd869082548bafa74.png') no-repeat;
+    background-size: cover;
+
+    padding: 2em 5%;
+}
+
+.impact__fig {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+}
+
+.impact__img-c {
+
+}
+
+.impact__img {
+    width: 100%;
+}
+
+/* Roles section */
+.roles {
+    padding: 2em 5%;
+}
+
+.roles__heading span {
+    color: var(--red);
+}
+
+.role__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    place-items: center;
+    gap: 1.5em;
+
+    margin: 1.5em;
+}
+
+.role {
+    text-align: center;
+    background: var(--white);
+    position: relative;
+
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    border-radius: .5em;
+    font-size: 1.125rem;
+    color: #787878;
+    padding: 1em;
+    z-index: 2;
+}
+
+/* Companies section */
+.companies {
+padding: 2em 5%;
+}
+
+.company__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    place-items: center;
+    gap: 1.5em;
+
+    margin: 1.5em;
+}
+
+.company {
+    text-align: center;
+    background: var(--white);
+    position: relative;
+
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16);
+    border-radius: .5em;
+    font-size: 1.125rem;
+    color: #787878;
+    padding: 1em;
+    z-index: 2;
+}
+
+/* Why hire section */
+.hire {
+    background-color: rgb(255, 248, 229);
+    padding: 4em 5%;
+
+    background-image: url('../assets/images/talent/rope.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.hire__heading {
+    margin-bottom: 2.25em;
+    text-align: center;
+}
+
+.hire__heading span {
+    color: var(--red);
+}
+
+.hire__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.hire__item {
+    flex: 350px;
+    max-width: 450px;
+
+    background: var(--white);
+    color: #787878;
+    border-end-end-radius: 1em;
+    text-align: center;
+    padding: 3em 1em;
+}
+
+.hire__item:hover {
+    background: #161617;
+    color: var(--white);
+}
+
+.hire__figc {
+    margin: 1em 0;
+}
+
+.talent-btns {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.hire-talent,
+.join-talent {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    border: none;
+    color: var(--white);
+    outline: none;
+    border-end-end-radius: .75em;
+    padding: .75em 2.25em;
+}
+
+.hire-talent {
+    background: var(--red);
+}
+
+.join-talent {
+    background: #585858;
+}
+
+/* Footer */
+.footer {
+    background: #161617;
+    padding: 3em 5%;   
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.footer__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.social__img {
+    width: 30px;
+}
+
+.footer__hr {
+    border: none;
+    height: 1px;
+    background: gray;
+    width: 100%;
+}
+
+.footer__bottom {
+    color: var(--white);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5em;
+
+    width: 100%;
+}
+
+.footer__email {
+    color: inherit;
+}
+
+@media (min-width: 600px) {
+    .footer__top,
+    .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__hr {
+        display: none;
+    }
+}
+
+
+@media (min-width: 890px) {
+    .nav__right {
+        justify-content: space-between;
+    }
+
+    .nav__menu {
+        display: flex;
+    }
+}
+
+@media (min-width: 900px) {
+    .impact {
+    }
+
+    .impact__fig {
+        flex-direction: row-reverse;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero__fig {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
